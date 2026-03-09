@@ -156,7 +156,7 @@
           <div class="col-md-7 grid-margin stretch-card">
             <div class="card">
               <div class="card-body">
-                <p class="card-title">Ventas diarias</p>
+                <p class="card-title">Ventas por Mes</p>
                 <div
                   id="cash-deposits-chart-legend"
                   class="d-flex justify-content-center pt-3"></div>
@@ -183,6 +183,11 @@
       </div>
       <!-- content-wrapper ends -->
       <!-- partial:partials/_footer.html -->
+      <script>
+        // Datos de ventas por mes para el gráfico
+        var ventasPorMesLabels = <?= json_encode($datos['ventasPorMes']['labels']); ?>;
+        var ventasPorMesData = <?= json_encode($datos['ventasPorMes']['data']); ?>;
+      </script>
     </div>
     </div>
     </div>

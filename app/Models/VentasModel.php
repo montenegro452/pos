@@ -72,4 +72,31 @@ class VentasModel extends Model
 			->where("MONTH(fecha_alta) = ", $month)
 			->countAllResults();
 	}
+
+	/**
+	 * Obtiene la cantidad de ventas por mes para el año actual.
+	 *
+	 * @return array Array con los meses (labels) y cantidades (data)
+	 */
+	public function ventasPorMes()
+	{
+		$resultado = [];
+		$meses = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
+		$year = date('Y');
+
+		// Obtener ventas de enero a diciembre del año actual
+		for ($month = 1; $month <= 12; $month++) {
+			$monthPad = str_pad($month, 2, '0', STR_PAD_LEFT);
+
+			$cantidad = $this->where('activo', 1)
+				->where("YEAR(fecha_alta) = ", $year)
+				->where("MONTH(fecha_alta) = ", $monthPad)
+				->countAllResults();
+
+			$resultado['labels'][] = $meses[$month - 1];
+			$resultado['data'][] = $cantidad;
+		}
+
+		return $resultado;
+	}
 }

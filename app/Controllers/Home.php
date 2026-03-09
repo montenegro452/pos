@@ -48,13 +48,16 @@ class Home extends BaseController
         $totalVentasMes = $this->ventasModel->totalMes($currentYear, $currentMonth);
 
         $totalCategorias = $this->categoriasModel->obtener();
+        $ventasPorMes = $this->ventasModel->ventasPorMes();
+
         $datos = [
             'total' => $total,
             'totalVendidos' => $totalVendidos,
             'totalVentas' => $totalVentas,
             'totalVentasMes' => $totalVentasMes,
             'categorias' => count($totalCategorias),
-            'minimos' => $minimos
+            'minimos' => $minimos,
+            'ventasPorMes' => $ventasPorMes
         ];
         return view('header')
             . view('dashboard', [

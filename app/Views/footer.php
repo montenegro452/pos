@@ -20,7 +20,7 @@
 <script src="<?= base_url(); ?>js/off-canvas.js"></script>
 <script src="<?= base_url(); ?>js/hoverable-collapse.js"></script>
 <script src="<?= base_url(); ?>js/template.js"></script>
-<!-- <script src="<?= base_url(); ?>js/dashboard.js"></script> -->
+<script src="<?= base_url(); ?>js/dashboard.js"></script>
 <script src="<?= base_url(); ?>js/data-table.js"></script>
 <script src="<?= base_url(); ?>js/jquery.dataTables.js"></script>
 <script src="<?= base_url(); ?>js/dataTables.bootstrap4.js"></script>
