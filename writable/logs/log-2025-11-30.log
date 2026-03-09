@@ -1,0 +1,300 @@
+DEBUG - 2025-11-30 00:23:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-11-30 00:30:56 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "unidades.php"
+[Method: GET, Route: unidades]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('unidades.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('unidades', [], true)
+ 3 APPPATH\Controllers\Unidades.php(39): view('unidades', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Unidades->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-30 00:30:59 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "unidades.php"
+[Method: GET, Route: unidades]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('unidades.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('unidades', [], true)
+ 3 APPPATH\Controllers\Unidades.php(39): view('unidades', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Unidades->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-30 00:38:25 --> ErrorException: Undefined variable $base
+[Method: GET, Route: unidades]
+in APPPATH\Config\Routes.php on line 19.
+ 1 APPPATH\Config\Routes.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $base', 'C:\\xampp\\htdocs\\pos\\app\\Config\\Routes.php', 19)
+ 2 SYSTEMPATH\Router\RouteCollection.php(799): {closure}(Object(CodeIgniter\Router\RouteCollection))
+ 3 APPPATH\Config\Routes.php(18): CodeIgniter\Router\RouteCollection->group('unidades', Object(Closure))
+ 4 APPPATH\Config\Routes.php(30): defineCrudRoutes(Object(CodeIgniter\Router\RouteCollection), 'unidades', 'Unidades')
+ 5 SYSTEMPATH\Router\RouteCollection.php(339): require('C:\\xampp\\htdocs\\pos\\app\\Config\\Routes.php')
+ 6 SYSTEMPATH\CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 7 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-30 00:39:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "unidades/unidades.php"
+[Method: GET, Route: unidades]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('unidades/unidades.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('unidades/unidades', [], true)
+ 3 APPPATH\Controllers\Unidades.php(39): view('unidades/unidades', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Unidades->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-30 00:40:08 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "unidades/.php"
+[Method: GET, Route: unidades]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('unidades/.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('unidades/', [], true)
+ 3 APPPATH\Controllers\Unidades.php(39): view('unidades/', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Unidades->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-30 00:40:16 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "unidades/.php"
+[Method: GET, Route: unidades]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('unidades/.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('unidades/', [], true)
+ 3 APPPATH\Controllers\Unidades.php(39): view('unidades/', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Unidades->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-30 00:40:20 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "unidades/.php"
+[Method: GET, Route: unidades]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('unidades/.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('unidades/', [], true)
+ 3 APPPATH\Controllers\Unidades.php(39): view('unidades/', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Unidades->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-30 00:41:37 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "ç"
+[Method: GET, Route: %C3%A7]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('ç')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('ç')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-30 01:08:34 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "unidades/editar.php"
+[Method: GET, Route: unidades/editar/11]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('unidades/editar.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('unidades/editar', [], true)
+ 3 APPPATH\Controllers\Unidades.php(86): view('unidades/editar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Unidades->editar('11')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-30 01:43:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "unidades/editar.php"
+[Method: GET, Route: unidades/editar/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('unidades/editar.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('unidades/editar', [], true)
+ 3 APPPATH\Controllers\Unidades.php(86): view('unidades/editar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Unidades->editar('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-30 01:43:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "unidades/editar.php"
+[Method: GET, Route: unidades/editar/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('unidades/editar.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('unidades/editar', [], true)
+ 3 APPPATH\Controllers\Unidades.php(86): view('unidades/editar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Unidades->editar('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-30 03:00:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "unidades/eliminados.php"
+[Method: GET, Route: unidades/eliminados]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('unidades/eliminados.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('unidades/eliminados', [], true)
+ 3 APPPATH\Controllers\Unidades.php(48): view('unidades/eliminados', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Unidades->eliminados()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-30 03:02:33 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "unidades/eliminados.php"
+[Method: GET, Route: unidades/eliminados]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('unidades/eliminados.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('unidades/eliminados', [], true)
+ 3 APPPATH\Controllers\Unidades.php(48): view('unidades/eliminados', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Unidades->eliminados()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-30 04:46:22 --> ErrorException: Undefined variable $unidad
+[Method: GET, Route: unidades/editar/3]
+in APPPATH\Views\unidades\editar.php on line 13.
+ 1 APPPATH\Views\unidades\editar.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $unidad', 'C:\\xampp\\htdocs\\pos\\app\\Views\\unidades\\editar.php', 13)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\pos\\app\\Views\\unidades\\editar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('unidades/editar', [], true)
+ 5 APPPATH\Controllers\Unidades.php(85): view('unidades/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Unidades->editar('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-30 04:47:07 --> ErrorException: Undefined variable $unidades
+[Method: GET, Route: unidades/editar/3]
+in APPPATH\Views\unidades\editar.php on line 13.
+ 1 APPPATH\Views\unidades\editar.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $unidades', 'C:\\xampp\\htdocs\\pos\\app\\Views\\unidades\\editar.php', 13)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\pos\\app\\Views\\unidades\\editar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('unidades/editar', [], true)
+ 5 APPPATH\Controllers\Unidades.php(85): view('unidades/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Unidades->editar('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-30 04:47:08 --> ErrorException: Undefined variable $unidades
+[Method: GET, Route: unidades/editar/3]
+in APPPATH\Views\unidades\editar.php on line 13.
+ 1 APPPATH\Views\unidades\editar.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $unidades', 'C:\\xampp\\htdocs\\pos\\app\\Views\\unidades\\editar.php', 13)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\pos\\app\\Views\\unidades\\editar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('unidades/editar', [], true)
+ 5 APPPATH\Controllers\Unidades.php(85): view('unidades/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Unidades->editar('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-30 04:47:10 --> ErrorException: Undefined variable $unidades
+[Method: GET, Route: unidades/editar/3]
+in APPPATH\Views\unidades\editar.php on line 13.
+ 1 APPPATH\Views\unidades\editar.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $unidades', 'C:\\xampp\\htdocs\\pos\\app\\Views\\unidades\\editar.php', 13)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\pos\\app\\Views\\unidades\\editar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('unidades/editar', [], true)
+ 5 APPPATH\Controllers\Unidades.php(85): view('unidades/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Unidades->editar('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-30 04:47:10 --> ErrorException: Undefined variable $unidades
+[Method: GET, Route: unidades/editar/3]
+in APPPATH\Views\unidades\editar.php on line 13.
+ 1 APPPATH\Views\unidades\editar.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $unidades', 'C:\\xampp\\htdocs\\pos\\app\\Views\\unidades\\editar.php', 13)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\pos\\app\\Views\\unidades\\editar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('unidades/editar', [], true)
+ 5 APPPATH\Controllers\Unidades.php(85): view('unidades/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Unidades->editar('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-30 04:56:07 --> ErrorException: Undefined variable $unidad
+[Method: GET, Route: unidades/editar/5]
+in APPPATH\Views\unidades\editar.php on line 14.
+ 1 APPPATH\Views\unidades\editar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $unidad', 'C:\\xampp\\htdocs\\pos\\app\\Views\\unidades\\editar.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\pos\\app\\Views\\unidades\\editar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('unidades/editar', [], true)
+ 5 APPPATH\Controllers\Unidades.php(84): view('unidades/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Unidades->editar('5')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-30 05:02:32 --> ErrorException: unlink(C:\xampp\htdocs\pos\writable\debugbar/debugbar_1764478226.561515.json): No such file or directory
+[Method: GET, Route: /]
+in SYSTEMPATH\Debug\Toolbar\Collectors\History.php on line 82.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp\\htdocs\\pos\\writable\\debugbar/debugbar_1764478226.561515.json): No such file or directory', 'C:\\xampp\\htdocs\\pos\\system\\Debug\\Toolbar\\Collectors\\History.php', 82)
+ 2 SYSTEMPATH\Debug\Toolbar\Collectors\History.php(82): unlink('C:\\xampp\\htdocs\\pos\\writable\\debugbar/debugbar_1764478226.561515.json')
+ 3 SYSTEMPATH\Debug\Toolbar.php(517): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles('1764478950.658292', 20)
+ 4 SYSTEMPATH\Debug\Toolbar.php(496): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 5 APPPATH\Config\Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH\Events\Events.php(152): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(339): CodeIgniter\Events\Events::trigger('pre_system')
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-30 14:22:51 --> ErrorException: preg_match(): Compilation failed: unmatched closing parenthesis at offset 20
+[Method: POST, Route: unidades/actualizar]
+in SYSTEMPATH\Router\Router.php on line 436.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 20', 'C:\\xampp\\htdocs\\pos\\system\\Router\\Router.php', 436)
+ 2 SYSTEMPATH\Router\Router.php(436): preg_match('#^unidades/actualizar)$#u', 'unidades/actualizar', [])
+ 3 SYSTEMPATH\Router\Router.php(213): CodeIgniter\Router\Router->checkRoutes('unidades/actualizar')
+ 4 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('unidades/actualizar')
+ 5 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-30 14:39:37 --> ErrorException: preg_match(): Compilation failed: unmatched closing parenthesis at offset 20
+[Method: POST, Route: unidades/insertar]
+in SYSTEMPATH\Router\Router.php on line 436.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 20', 'C:\\xampp\\htdocs\\pos\\system\\Router\\Router.php', 436)
+ 2 SYSTEMPATH\Router\Router.php(436): preg_match('#^unidades/actualizar)$#u', 'unidades/insertar', [])
+ 3 SYSTEMPATH\Router\Router.php(213): CodeIgniter\Router\Router->checkRoutes('unidades/insertar')
+ 4 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('unidades/insertar')
+ 5 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-30 14:40:12 --> ErrorException: preg_match(): Compilation failed: unmatched closing parenthesis at offset 20
+[Method: POST, Route: unidades/insertar]
+in SYSTEMPATH\Router\Router.php on line 436.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 20', 'C:\\xampp\\htdocs\\pos\\system\\Router\\Router.php', 436)
+ 2 SYSTEMPATH\Router\Router.php(436): preg_match('#^unidades/actualizar)$#u', 'unidades/insertar', [])
+ 3 SYSTEMPATH\Router\Router.php(213): CodeIgniter\Router\Router->checkRoutes('unidades/insertar')
+ 4 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('unidades/insertar')
+ 5 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-30 15:40:24 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "{5}"
+[Method: GET, Route: unidades/editar/%7B5%7D]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('unidades/editar/{5}')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('unidades/editar/{5}')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
