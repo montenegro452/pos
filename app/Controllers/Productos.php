@@ -50,7 +50,7 @@ class Productos extends BaseController
 			session()->setFlashdata('msg_acceso', 'No tienes permiso para el modulo Productos');
 			return redirect()->to(base_url('dashboard'));
 		}
-		$productos = $this->productos->where('activo', $activo)->findAll();
+		$productos = $this->productos->where('activo', $activo)->orderBy('id', 'DESC')->findAll();
 		$data = ['titulo' => 'Productos', 'datos' => $productos];
 		echo view('header');
 		echo view('productos/index', $data);
@@ -128,15 +128,14 @@ class Productos extends BaseController
 
 			$validacion = $this->validate([
 				'img_producto' => [
-					'rules' => 'uploaded[img_producto]|mime_in[img_producto,image/jpg,image/jpeg]|max_size[img_producto,4096]',
+					'rules' => 'uploaded[img_producto]|mime_in[img_producto,image/jpg,image/jpeg,image/png]|max_size[img_producto,4096]',
 					'errors' => [
 						'uploaded' => 'Debes subir un producto para la tienda.',
-						'mime_in' => 'El producto debe ser una imagen en formato PNG.',
+						'mime_in' => 'El producto debe ser una imagen en formato PNG o JPG.',
 						'max_size' => 'La foto del producto no debe exceder los 4MB de tamaño.'
 					]
 				]
 			]);
-
 			if ($validacion) {
 				$ruta_logo = "images/productos/" . $id . ".jpg";
 				if (file_exists($ruta_logo)) {

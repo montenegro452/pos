@@ -11,7 +11,7 @@ use CodeIgniter\I18n\Time;
             <h4 class="card-title"><?php echo $titulo ?></h4>
             <div>
               <p>
-                <a href="<?php echo base_url(); ?>ventas/eliminados" class="btn btn-dark btn-icon-text">
+                <a href="<?php echo base_url(); ?>ventas/eliminados" class="btn btn-sm btn-dark btn-icon-text">
                   <i class="mdi mdi-window-close btn-icon-prepend"></i>Eliminados</a>
               </p>
             </div>
@@ -21,7 +21,7 @@ use CodeIgniter\I18n\Time;
                   No hay ventas registradas
                 </div>
               <?php } else { ?>
-                <table class="table table-striped table-bordered">
+                <table class="table table-striped table-bordered" id="MisTablas">
                   <thead>
                     <tr>
                       <th>
@@ -49,7 +49,7 @@ use CodeIgniter\I18n\Time;
                     <?php foreach ($datos as $dato) {
                     ?>
                       <tr>
-                        <?php $fecha = Time::parse($dato['fecha_alta']);                                            ?>
+                        <?php $fecha = Time::parse($dato['fecha_alta']); ?>
                         <td><?php echo $fecha->format('d/m/Y H:i:s'); ?></td>
                         <td><?php echo $dato['folio']; ?></td>
                         <td><?php echo $dato['cliente']; ?></td>

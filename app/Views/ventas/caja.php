@@ -50,7 +50,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <button type="button" id="completa_venta" class="btn btn-success btn-icon-text">
+                                <button type="button" id="completa_venta" class="btn btn-sm btn-success btn-icon-text">
                                     <i class="mdi mdi-cart btn-icon-prepend"></i>Completar Venta</button>
                             </div>
                             <div class="row">

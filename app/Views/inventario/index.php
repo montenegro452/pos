@@ -10,37 +10,38 @@ use CodeIgniter\I18n\Time;
                     <div class="card-body">
                         <h4 class="card-title"><?php echo $titulo ?></h4>
                         <div class="table-responsive">
-                            <table class="table table-striped table-bordered">
+                            <table class="table table-striped table-bordered" id="MisTablas">
                                 <thead>
                                     <tr>
-                                        <th>
+                                        <th scope="col">
                                             Id
                                         </th>
-                                        <th>
+                                        <th scope="col">
                                             Folio
                                         </th>
-                                        <th>
+                                        <th scope="col">
                                             Total
                                         </th>
-                                        <th>
+                                        <th scope="col">
                                             Fecha
                                         </th>
-                                        <th>
+                                        <th scope="col">
 
                                         </th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php foreach ($compras as $compra) {
+                                    <?php foreach ($inventario as $invent) {
                                     ?>
                                         <tr>
-                                            <td><?php echo $compra['id']; ?></td>
-                                            <td><?php echo $compra['folio']; ?></td>
-                                            <td><?php echo floatval(str_replace(',', '.', $compra['total'])); ?></td>
-                                            <?php $fecha = Time::parse($compra['fecha_alta']);
+                                            <td><?php echo $invent['id']; ?></td>
+                                            <td><?php echo $invent['folio']; ?></td>
+                                            <td><?php echo floatval(str_replace(',', '.', $invent['total'])); ?></td>
+                                            <?php $fecha = Time::parse($invent['fecha_alta']);
                                             ?>
                                             <td><?php echo $fecha->format('d/m/Y H:i:s'); ?></td>
-                                            <td><a href="<?php echo base_url() . 'compras/muestraCompraPdf/' . $compra['id']; ?>" class="btn btn-primary btn-icon-text"><i class="mdi mdi-file-pdf btn-icon-prepend"></i></a></td>
+                                            <td><a href="<?php echo base_url() . 'inventario/muestraCompraPdf/' .
+                                                                $invent['id']; ?>" class="btn btn-sm btn-primary btn-icon-text"><i class="mdi mdi-file-pdf btn-icon-prepend"></i>Ver ticket</a></td>
                                         </tr>
                                     <?php } ?>
                                 </tbody>

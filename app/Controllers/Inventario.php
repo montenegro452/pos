@@ -4,19 +4,19 @@ namespace App\Controllers;
 
 use CodeIgniter\I18n\Time;
 use App\Controllers\BaseController;
-use App\Models\ComprasModel;
+use App\Models\InventarioModel;
 use App\Models\TemporalCompraModel;
 use App\Models\DetalleCompraModel;
 use App\Models\ProductosModel;
 use App\Models\ConfiguracionModel;
 
-class Compras extends BaseController
+class Inventario extends BaseController
 {
-	protected $compras, $temporal_compra, $detalle_compra, $productos, $configuracion;
+	protected $inventario, $temporal_compra, $detalle_compra, $productos, $configuracion;
 
 	public function __construct()
 	{
-		$this->compras = new ComprasModel();
+		$this->inventario = new InventarioModel();
 		$this->detalle_compra = new DetalleCompraModel();
 		$this->configuracion = new ConfiguracionModel();
 		helper(['form']);
@@ -26,14 +26,14 @@ class Compras extends BaseController
 	{
 		// Verificar permiso
 		helper('permisos');
-		if (!tienePermiso('compras_ver')) {
-			session()->setFlashdata('msg_acceso', 'No tienes permiso para el modulo Categorias');
+		if (!tienePermiso('inventario_ver')) {
+			session()->setFlashdata('msg_acceso', 'No tienes permiso para el modulo Compras');
 			return redirect()->to(base_url('dashboard'));
 		}
-		$compras = $this->compras->where('activo', $activo)->findAll();
-		$data = ['titulo' => 'Compras', 'compras' => $compras];
+		$inventario = $this->inventario->where('activo', $activo)->orderBy('fecha_alta', 'DESC')->findAll();
+		$data = ['titulo' => 'Inventario', 'inventario' => $inventario];
 		return view('header')
-			. view('compras/index', $data)
+			. view('inventario/index', $data)
 			. view('footer');
 	}
 
@@ -41,12 +41,12 @@ class Compras extends BaseController
 	{
 		// Verificar permiso
 		helper('permisos');
-		if (!tienePermiso('compras_agregar')) {
+		if (!tienePermiso('inventario_agregar')) {
 			session()->setFlashdata('msg_acceso', 'No tienes permiso para el modulo Categorias');
 			return redirect()->to(base_url('dashboard'));
 		}
 		return view('header')
-			. view('compras/nuevo')
+			. view('inventario/nuevo')
 			. view('footer');
 	}
 
@@ -54,8 +54,8 @@ class Compras extends BaseController
 	{
 		// Verificar permiso
 		helper('permisos');
-		if (!tienePermiso('compras_agregar')) {
-			session()->setFlashdata('msg_acceso', 'No tienes permiso para el modulo Categorias');
+		if (!tienePermiso('inventario_agregar')) {
+			session()->setFlashdata('msg_acceso', 'No tienes permiso para el modulo Inventario');
 			return redirect()->to(base_url('dashboard'));
 		}
 		$id_compra = $this->request->getPost('id_compra');
@@ -70,7 +70,7 @@ class Compras extends BaseController
 			$total += floatval(str_replace(',', '.', $row['subtotal']));
 		}
 
-		$resultado_id = $this->compras->insertaCompra($id_compra, $total, $session->id_usuario);
+		$resultado_id = $this->inventario->insertaCompra($id_compra, $total, $session->id_usuario);
 
 		if ($resultado_id) {
 			foreach ($resultadoCompra as $row) {
@@ -87,20 +87,20 @@ class Compras extends BaseController
 			}
 			$this->temporal_compra->eliminaCompra($id_compra);
 		}
-		return redirect()->to(base_url('compras/muestraCompraPdf/' . $resultado_id));
+		return redirect()->to(base_url('inventario/muestraCompraPdf/' . $resultado_id));
 	}
 
 	function muestraCompraPdf($id_compra)
 	{
 		// Verificar permiso
 		helper('permisos');
-		if (!tienePermiso('compras_ver')) {
+		if (!tienePermiso('inventario_ver')) {
 			session()->setFlashdata('msg_acceso', 'No tienes permiso para el modulo Categorias');
 			return redirect()->to(base_url('dashboard'));
 		}
 		$data['id_compra'] = $id_compra;
 		return view('header')
-			. view('compras/ver_compra_pdf', $data)
+			. view('inventario/ver_compra_pdf', $data)
 			. view('footer');
 	}
 
@@ -108,11 +108,11 @@ class Compras extends BaseController
 	{
 		// Verificar permiso
 		helper('permisos');
-		if (!tienePermiso('compras_agregar')) {
+		if (!tienePermiso('inventario_agregar')) {
 			session()->setFlashdata('msg_acceso', 'No tienes permiso para el modulo Categorias');
 			return redirect()->to(base_url('dashboard'));
 		}
-		$datosCompra = $this->compras->where('id', $id_compra)->first();
+		$datosCompra = $this->inventario->where('id', $id_compra)->first();
 		$detalleCompra = $this->detalle_compra->select('*')->where('id_compra', $id_compra)->findAll();
 		$nombreTienda = $this->configuracion->select('valor')->where('nombre', 'tienda_nombre')->get()->getRow()->valor;
 		$direccionTienda = $this->configuracion->select('valor')->where('nombre', 'tienda_direccion')->get()->getRow()->valor;

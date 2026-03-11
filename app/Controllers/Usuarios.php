@@ -375,7 +375,7 @@ class Usuarios extends BaseController
 						'id_usuario' => $datosUsuario['id'],
 						'evento' => 'Inicio de sesión',
 						'ip' => $ip,
-						'detalles' => 'Usuario inició sesión desde: ' . $detalles
+						'detalles' => 'Inició sesión desde: ' . $detalles
 					]);
 
 					$session = session();
@@ -405,7 +405,7 @@ class Usuarios extends BaseController
 			'id_usuario' => $session->id_usuario,
 			'evento' => 'Cierre de sesión',
 			'ip' => $ip,
-			'detalles' => 'Usuario finalizo la sesión desde: ' . $detalles
+			'detalles' => 'Finalizo la sesión desde: ' . $detalles
 		]);
 		$session->destroy();
 		return redirect()->to(base_url());

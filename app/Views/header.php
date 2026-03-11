@@ -154,28 +154,28 @@ $user_session = session();
               </ul>
             </div>
           </li>
-          <?php if (tienePermiso('compras_ver')): ?>
+          <?php if (tienePermiso('inventario_ver')): ?>
             <li class="nav-item">
               <a
                 class="nav-link"
                 data-toggle="collapse"
-                href="#ui-compras"
+                href="#ui-inventario"
                 aria-expanded="false"
-                aria-controls="ui-compras">
+                aria-controls="ui-inventario">
                 <i class="mdi mdi-truck-delivery menu-icon"></i>
-                <span class="menu-title">Compras</span>
+                <span class="menu-title">Inventario</span>
                 <i class="menu-arrow"></i>
               </a>
-              <div class="collapse" id="ui-compras">
+              <div class="collapse" id="ui-inventario">
                 <ul class="nav flex-column sub-menu">
-                  <?php if (tienePermiso('compras_agregar')): ?>
+                  <?php if (tienePermiso('inventario_agregar')): ?>
                     <li class="nav-item">
-                      <a class="nav-link" href="<?= base_url(); ?>compras/nuevo">Nueva Compra</a>
+                      <a class="nav-link" href="<?= base_url(); ?>inventario/nuevo">Agregar al inventario</a>
                     </li>
                   <?php endif; ?>
-                  <?php if (tienePermiso('compras_agregar')): ?>
+                  <?php if (tienePermiso('inventario_agregar')): ?>
                     <li class="nav-item">
-                      <a class="nav-link" href="<?= base_url(); ?>compras">Compras</a>
+                      <a class="nav-link" href="<?= base_url(); ?>inventario">Inventario</a>
                     </li>
                   <?php endif; ?>
                 </ul>
@@ -241,6 +241,9 @@ $user_session = session();
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="<?= base_url(); ?>roles">Roles</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="<?= base_url(); ?>logs">Logs</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="<?= base_url(); ?>cajas">Cajas</a>

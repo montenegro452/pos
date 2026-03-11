@@ -8,7 +8,7 @@
             <h4 class="card-title"><?php echo $titulo ?></h4>
             <div class="table-responsive">
               <?php if (empty($datos)): ?>
-                <a href="<?php echo base_url(); ?>productos" class="btn btn-primary">Regresar</a>
+                <a href="<?php echo base_url(); ?>productos" class="mdi mdi-arrow-left btn btn-sm btn-primary btn-icon-text">Regresar</a>
                 <br>
                 <br>
                 <div class="alert alert-info" role="alert">

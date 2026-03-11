@@ -16,9 +16,8 @@ $id_compra = uniqid();
                     <input type="hidden" id="id_producto" name="id_producto" />
                     <input type="hidden" id="id_compra" name="id_compra" value="<?php echo $id_compra; ?>" />
                     <label>Código</label>
-
                     <input class="form-control" type="text" name="codigo" id="codigo" autofocus
-                      placeholder="Escribe el codigo y preciona Enter" onkeyup="buscarProducto(event, this, this.value)">
+                      placeholder="Escribe el codigo y presiona Enter" onkeyup="buscarProducto(event, this, this.value)">
                     <label for="codigo" id="resultado_error" style="color: red;"></label>
                   </div>
                   <div class="col-12 col-sm-4">
@@ -44,7 +43,7 @@ $id_compra = uniqid();
                   <div class="col-12 col-sm-4">
                     <br>
                     <label><br>&nbsp;</label>
-                    <button id="agregar_producto" name="agregar_producto" type="button" class="btn btn-primary btn-icon-text"
+                    <button id="agregar_producto" name="agregar_producto" type="button" class="btn btn-sm btn-primary btn-icon-text"
                       onclick="agregarProducto(id_producto.value, cantidad.value, '<?php echo $id_compra; ?>')">
                       <i class="mdi mdi-cart-plus btn-icon-prepend"></i>Agregar Producto</button>
                   </div>
@@ -69,7 +68,7 @@ $id_compra = uniqid();
                   <label style="font-weight: bold; font-size: 30px; text-align: center;">Total $</label>
                   <input type="text" id="total" name="total" size="7" readonly="true" value="0.00"
                     style="font-weight: bold; font-size: 30px; text-align: center;" />
-                  <button type="button" id="completa_compra" class="btn btn-success btn-icon-text"><i class="mdi mdi-cart btn-icon-prepend"></i>Completar Compra</button>
+                  <button type="button" id="completa_compra" class="btn btn-sm btn-success btn-icon-text"><i class="mdi mdi-cart btn-icon-prepend"></i>Completar Compra</button>
                 </div>
               </div>
             </form>
@@ -83,7 +82,7 @@ $id_compra = uniqid();
     $(document).ready(function() {
       $("#completa_compra").click(function() {
         let nFilas = $("#tablaProductos tbody tr").length;
-        if(nFilas > 0) {
+        if (nFilas > 0) {
           $("#form_compra").submit();
         } else {
           Swal.fire({

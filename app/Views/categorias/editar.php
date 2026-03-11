@@ -15,8 +15,8 @@
                   </div>
                 </div>
               </div>
-              <a href="<?php echo base_url(); ?>categorias" class="btn btn-primary">Regresar</a>
-              <button type="submit" class="btn btn-success">Guardar</button>
+              <a href="<?php echo base_url(); ?>categorias" class="mdi mdi-arrow-left btn btn-sm btn-primary btn-icon-text">Regresar</a>
+              <button type="submit" class="mdi mdi-content-save btn btn-sm btn-success btn-icon-text">Guardar</button>
             </form>
           </div>
         </div>

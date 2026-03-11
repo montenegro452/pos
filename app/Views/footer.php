@@ -135,7 +135,6 @@
     });
   </script>
 <?php endif; ?>
-
 <script>
   let inactivityTime = function() {
     let time;
@@ -154,8 +153,15 @@
       time = setTimeout(logout, 600000); // 5 minutos
     }
   };
-
   inactivityTime();
+</script>
+<script>
+  $('#MisTablas').DataTable({
+    language: {
+      url: 'vendors/datatables.net/es-ES.json'
+    },
+    ordering: false
+  });
 </script>
 
 </body>

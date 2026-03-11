@@ -14,7 +14,7 @@ $crudControllers = [
     'usuarios'  => 'Usuarios',
     'roles'  => 'Roles',
     'cajas'  => 'Cajas',
-    'compras'  => 'Compras',
+    'inventario'  => 'Inventario',
     'ventas'  => 'Ventas',
     'logs'  => 'Logs',
 ];
@@ -55,10 +55,10 @@ $routes->get('TemporalCompra/inserta/(:num)/(:num)/(:any)', 'TemporalCompra::ins
 $routes->get('elimina/(:num)/(:any)', 'TemporalCompra::elimina/$1/$2');
 $routes->get('TemporalVenta/inserta/(:num)/(:num)/(:any)', 'TemporalVenta::inserta/$1/$2/$3');
 $routes->get('TemporalVenta/elimina/(:num)/(:any)', 'TemporalVenta::elimina/$1/$2');
-$routes->post('compras/guarda', 'Compras::guarda');
-$routes->get('compras/ver_compra_pdf/(:num)', 'Compras::muestraCompraPdf/$1');
-$routes->get('compras/muestraCompraPdf/(:num)', 'Compras::muestraCompraPdf/$1');
-$routes->get('compras/generaCompraPdf/(:num)', 'Compras::generaCompraPdf/$1');
+$routes->post('inventario/guarda', 'Inventario::guarda');
+$routes->get('inventario/ver_compra_pdf/(:num)', 'Inventario::muestraCompraPdf/$1');
+$routes->get('inventario/muestraCompraPdf/(:num)', 'Inventario::muestraCompraPdf/$1');
+$routes->get('inventario/generaCompraPdf/(:num)', 'Inventario::generaCompraPdf/$1');
 $routes->get('ventas/caja', 'Ventas::venta');
 $routes->post('ventas/guarda', 'Ventas::guarda');
 $routes->get('ventas/muestraTicket/(:num)', 'Ventas::muestraTicket/$1');

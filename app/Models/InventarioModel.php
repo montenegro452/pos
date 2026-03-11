@@ -4,9 +4,9 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class ComprasModel extends Model
+class InventarioModel extends Model
 {
-	protected $table      = 'compras';
+	protected $table      = 'inventario';
 	protected $primaryKey = 'id';
 
 	protected $useAutoIncrement = true;
@@ -14,7 +14,7 @@ class ComprasModel extends Model
 	protected $returnType     = 'array';
 	protected $useSoftDeletes = false;
 
-	protected $allowedFields = ['folio', 'total', 'id_usuario', 'activo'];
+	protected $allowedFields = ['folio', 'total', 'id_usuario', 'activo', 'id_producto', 'movimiento'];
 
 	protected $useTimestamps = false;
 	protected $createdField  = 'fecha_alta';
@@ -31,7 +31,6 @@ class ComprasModel extends Model
 			'total' => $total,
 			'id_usuario' => $id_usuario
 		]);
-
 		return $this->insertID();
 	}
 }

@@ -16,11 +16,11 @@
               <div class="form-group">
                 <div class="row">
                   <div class="col-12 col-sm-6">
-                    <label>Código</label>
+                    <label><span class="text-danger">* </span>Código</label>
                     <input class="form-control" type="number" name="codigo" id="codigo" autofocus required>
                   </div>
                   <div class="col-12 col-sm-6">
-                    <label>Nombre</label>
+                    <label><span class="text-danger">* </span>Nombre</label>
                     <input class="form-control" type="text" name="nombre" id="nombre" required>
                   </div>
                 </div>
@@ -28,7 +28,7 @@
               <div class="form-group">
                 <div class="row">
                   <div class="col-12 col-sm-6">
-                    <label>Unidad</label>
+                    <label><span class="text-danger">* </span>Unidad</label>
                     <select class="form-control" id="id_unidad" name="id_unidad" required>
                       <option value="">Seleccionar unidad</option>
                       <?php foreach ($unidades as $unidad) { ?>
@@ -37,7 +37,7 @@
                     </select>
                   </div>
                   <div class="col-12 col-sm-6">
-                    <label>Categoría</label>
+                    <label><span class="text-danger">* </span>Categoría</label>
                     <select class="form-control" id="id_categoria" name="id_categoria" required>
                       <option value="">Seleccionar categoría</option>
                       <?php foreach ($categorias as $categoria) { ?>
@@ -50,11 +50,11 @@
               <div class="form-group">
                 <div class="row">
                   <div class="col-12 col-sm-6">
-                    <label>Precio venta</label>
+                    <label><span class="text-danger">* </span>Precio venta</label>
                     <input class="form-control" type="text" name="precio_venta" id="precio_venta" autofocus required>
                   </div>
                   <div class="col-12 col-sm-6">
-                    <label>Precio compra</label>
+                    <label><span class="text-danger">* </span>Precio compra</label>
                     <input class="form-control" type="text" name="precio_compra" id="precio_compra" required>
                   </div>
                 </div>
@@ -62,15 +62,15 @@
               <div class="form-group">
                 <div class="row">
                   <div class="col-12 col-sm-6">
-                    <label>Stock minimo</label>
-                    <input class="form-control" type="text" name="stock_minimo" id="stock_minimo" autofocus required>
-                  </div>
-                  <div class="col-12 col-sm-6">
                     <label>Es inventariable</label>
                     <select id="inventariable" name="inventariable" class="form-control">
                       <option value="1">Si</option>
                       <option value="0">No</option>
                     </select>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <label>Stock minimo</label>
+                    <input class="form-control" type="text" name="stock_minimo" id="stock_minimo" autofocus required>
                   </div>
                 </div>
               </div>
@@ -92,8 +92,9 @@
                   </div>
                 </div>
               </div>
-              <a href="<?php echo base_url(); ?>productos" class="btn btn-primary">Regresar</a>
-              <button type="submit" class="btn btn-success">Guardar</button>
+              <p class="text-danger">( * ) Campos obligatorios</p>
+              <a href="<?php echo base_url(); ?>productos" class="mdi mdi-arrow-left btn btn-sm btn-primary btn-icon-text">Regresar</a>
+              <button type="submit" class="mdi mdi-content-save btn btn-sm btn-success btn-icon-text">Guardar</button>
             </form>
           </div>
         </div>
